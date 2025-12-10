@@ -43,10 +43,11 @@ Press run all.
 This will create a tunnel running in the background .
 It will last a few hours or until you close it .
 The output will be an API URL:
-Save this as your access point to use locally.
+This is our entry point to local instances.
+Paste it into "server_url.txt"
 
 
-## Pt2: How to call use LLM locally
+## Pt2: How to call and use LLM locally
 
 ### Prerequisites
 Have vscode installed. 
@@ -72,6 +73,45 @@ Then we will install the library needed:
 
 ``` pip install requests```
 
-### 2.2 Setup local class
+### 2.2 Try the study app executable
+
+sovereign_client.py represents the general class and tools that the AI server gets run with.
+Following, we use an executable that imports the class such as study_app.py, which is our simplest example.
+Run it using:
+
+```python3 ./Sovereign_AI/study_app.py```
+
+Afterwards, simply enjoy and follow the guidance!
+
+## Pt3: Learn to build yourself
+
+Recall that the model weights is from Qwen 2.5 (14B).
+This is a quantised model to fit the free google colab VRAM. 
+The settings of this model and the application of its architecture from Ollama are done in the sovereign_client.py. 
+This is the general class any executable calls. 
+And assigns the model made in the server this classes attributes. 
+Currently the features are:
+
+50 maximum size of memory (25 turns), will forget earliest turn if surpass. 
+
+Able to compress memory to continue chat more effectively (via compress_memory)
+
+Able to set general system prompt and completely reset memory (via set_persona)
+
+Able to reset memory but not change system prompt (via clear_memory)
+
+Able to undo last turn (via forget_last)
+
+Able to vary temperature (via chat)
+
+chat is also the method that does the actual chatting. 
+
+
+
+
+
+
+
+
 
 
