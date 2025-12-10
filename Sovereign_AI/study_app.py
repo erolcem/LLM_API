@@ -32,6 +32,7 @@ def main():
     print("-----------------------------------")
     print("Type '/undo' to fix mistakes.")
     print("Type '/compress' to save memory.")
+    print("Type '/wipe' to remove memory.")
     print("Type '/quit' to exit.")
     print("-----------------------------------")
     

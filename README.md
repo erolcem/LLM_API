@@ -107,7 +107,8 @@ Able to vary temperature (via chat)
 chat is also the method that does the actual chatting. 
 
 
-
+An example of its implementation in its simplest form is shown in study_app.py, 
+Which is a simple terminal input form of the class. 
 
 
 
