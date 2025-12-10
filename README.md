@@ -8,6 +8,7 @@ Instance only needs few minutes of setup
 From any device with internet
 Completely offloaded,
 And fully customisable memory and context.
+(currently 4096 tokens or 50 messages if message is 50 words average).
 
 ## Pt1: How to setup server:
 
@@ -71,4 +72,6 @@ Then we will install the library needed:
 
 ``` pip install requests```
 
-### 2.2 
+### 2.2 Setup local class
+
+
